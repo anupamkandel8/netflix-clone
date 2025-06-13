@@ -1,6 +1,6 @@
 //note: zustand is a small, fast, and scalable state management solution for React applications.
 // we created custion hook useAuthStore to manage user authentication state.
-// create((set) => ({ ...असमा सबै ठाउँ मा use हुने object हुन्छ जसमा})) 
+// create((set) => ({ ...असमा भएको object सबै page/componet मा use गर्न सकिन्छ ff })) 
 
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -20,6 +20,7 @@ export const useAuthStore = create((set) => ({
 			toast.success("Account created successfully");
 		} catch (error) {
 			toast.error(error.response.data.message || "Signup failed");
+			//note:toast is used for pop-up notifications
 			set({ isSigningUp: false, user: null });
 		}
 	},

@@ -8,5 +8,6 @@
 
 $push mongooseको property हो जसले array मा only one नयाँ item add गर्छ, use $each to add multiple items
 <BrowserRouter> को use गरि react मा routing गर्छौं like: /login, /register, /dashboard etc.
-
+<Loader> component is used to show loading state while fetching data from backend
+aria-hidden='true' is used to hide the element from screen readers
 
