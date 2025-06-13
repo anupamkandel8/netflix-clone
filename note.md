@@ -11,3 +11,4 @@ $push mongooseको property हो जसले array मा only one नय�
 <Loader> component is used to show loading state while fetching data from backend
 aria-hidden='true' is used to hide the element from screen readers
 
+npm run buite in forntend will build the frontend code and create a dist folder

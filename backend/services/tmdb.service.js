@@ -14,6 +14,6 @@ export const fetchFromTMDB = async (url) => {
 	if (response.status !== 200) {
 		throw new Error("Failed to fetch data from TMDB" + response.statusText);
 	}
-console.log("TMDB Response: ", response.data);
+//console.log("TMDB Response: ", response.data);
 	return response.data;
 };
